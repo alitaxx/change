@@ -1,0 +1,7 @@
+- #合法注册
+  sign_data:
+    app_key: 29E362F90C9CAB765A7F56A52B0F2262
+    username: alita19
+    password: dami131441
+  url: http://hn216.api.yesapi.cn/?s=App.User.Register
+  err_code: 0

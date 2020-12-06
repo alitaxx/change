@@ -1,0 +1,21 @@
+- #合法登录
+  case_data:
+    app_key: 29E362F90C9CAB765A7F56A52B0F2262
+    username: alita1
+    password: dami131441
+  url: http://hn216.api.yesapi.cn/?s=App.User.Login
+  assert_result:
+    - err_code=0
+    - ret=200
+
+- #错误登录,用户名错误
+  case_data:
+    app_key: 29E362F90C9CAB765A7F56A52B0F2262
+    username: dami123
+    password: dami131441
+  url: http://hn216.api.yesapi.cn/?s=App.User.Login
+  assert_result:
+    - err_code=1
+    - ret=200
+
+
