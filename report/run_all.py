@@ -9,7 +9,7 @@ from setting import REPORT_PATH, CASE_PATH
 file_name=time.strftime('%Y-%m-%d-%H-%M-%S') #文件名
 
 discover=unittest.defaultTestLoader.discover(start_dir=CASE_PATH,
-                                             pattern='test_l*.py')
+                                             pattern='test_*.py')
 
 BeautifulReport(discover).report(
     description='自动化报告',

@@ -19,10 +19,12 @@ class LoginTestCase(unittest.TestCase):
         url = user_data.get('url')
         assert_result = user_data.get('assert_result')
         data = user_data.get('case_data')
-        # data['password']=str(data['password'])
-        # print(type(data['password'])) #打印数据类型
+        data['password']=str(data['password'])
+        # 打印数据类型
+        print(type(data['password']))
         #处理请求
         data['password'] = hash_pwd(data['password'])
+
         result = requests.post(url=url, data=data)
         print(result)
         #结果处理

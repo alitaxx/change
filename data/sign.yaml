@@ -1,7 +1,25 @@
 - #合法注册
   sign_data:
-    app_key: 29E362F90C9CAB765A7F56A52B0F2262
-    username: alita19
+    app_key: 169044477637472492C16712A7225F55
+    username: alitax
     password: dami131441
   url: http://hn216.api.yesapi.cn/?s=App.User.Register
   err_code: 0
+
+#- #用户名为空
+#  sign_data:
+#    app_key: 169044477637472492C16712A7225F55
+#    username:
+#    password: dami131441
+#  url: http://hn216.api.yesapi.cn/?s=App.User.Register
+#  assert_result:
+#    - ret=400
+
+#- #密码为空
+#  sign_data:
+#    app_key: 169044477637472492C16712A7225F55
+#    username: alita1
+#    password: dami131441
+#  url: http://hn216.api.yesapi.cn/?s=App.User.Register
+#  assert_result:
+#    - ret=400
