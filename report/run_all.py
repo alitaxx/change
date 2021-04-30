@@ -12,6 +12,6 @@ discover=unittest.defaultTestLoader.discover(start_dir=CASE_PATH,
                                              pattern='test_l*.py')
 
 BeautifulReport(discover).report(
-    description='小白接口自动化报告',
+    description='自动化报告',
     log_path=REPORT_PATH,
     filename=file_name)
