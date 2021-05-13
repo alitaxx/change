@@ -25,8 +25,8 @@
     password: dami131442
   url: http://hn216.api.yesapi.cn/?s=App.User.Login
   assert_result:
-      - err_code=2
-      - ret=200
+    - err_code=2
+    - ret=200
 
 - #错误登录,用户名错误2
   case_data:
@@ -37,3 +37,12 @@
   assert_result:
     - err_code=1
     - ret=200
+
+- #错误登录,用户名为空
+  case_data:
+    app_key: 169044477637472492C16712A7225F55
+    username:
+    password: dami131441
+  url: http://hn216.api.yesapi.cn/?s=App.User.Login
+  assert_result:
+    - ret=400
